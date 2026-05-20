@@ -40,8 +40,8 @@ def main() -> int:
     blocks = _matrix_blocks(text)
 
     assert _bundle_value(blocks["macos-14"]) == "app,dmg"
-    assert _bundle_value(blocks["windows-latest"]) == "msi"
-    assert "bundle/msi/*.msi" in blocks["windows-latest"]
+    assert _bundle_value(blocks["windows-latest"]) == "nsis"
+    assert "bundle/nsis/*.exe" in blocks["windows-latest"]
     assert "bundle/dmg/*.dmg" in blocks["macos-14"]
     print("package workflow ok")
     return 0

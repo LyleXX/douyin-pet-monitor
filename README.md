@@ -2,7 +2,7 @@
 
 本项目现在是一个 **Tauri v2 原生桌面应用**。界面使用 Vue 3 + TypeScript，数据处理继续使用 Python 3.12，SQLite 本地存储，支持 CSV/Excel 导入、重复导入更新、达人评分、筛选和 Excel 导出。
 
-打包完成后，普通使用者只需要安装 Windows `.msi` 或 macOS `.dmg/.app`，不需要打开终端，也不需要自己安装 Python、Node.js 或 Rust。
+打包完成后，普通使用者只需要安装 Windows `.exe` 或 macOS `.dmg/.app`，不需要打开终端，也不需要自己安装 Python、Node.js 或 Rust。
 
 ## 功能
 
@@ -125,8 +125,8 @@ npm run tauri build
 ## CI 自动打包
 
 - 推送到 `main` 后，GitHub Actions 会自动构建 macOS 和 Windows 安装包，并保留为 artifact。
-- 推送 `v*` 标签后，GitHub Actions 会自动创建 Release，并附上 macOS `.dmg` 和 Windows `.msi`。
-- Windows 安装包在 `desktop/src-tauri/target/release/bundle/msi/`。
+- 推送 `v*` 标签后，GitHub Actions 会自动创建 Release，并附上 macOS `.dmg` 和 Windows `.exe`。
+- Windows 安装包在 `desktop/src-tauri/target/release/bundle/nsis/`。
 - macOS 安装包在 `desktop/src-tauri/target/release/bundle/dmg/`。
 
 如果构建时从 `crates.io` 下载 Rust 依赖超时，项目已内置 `.cargo/config.toml` 使用 `rsproxy` sparse 镜像。确认在项目根目录执行命令后，重新运行 `npm run tauri build` 即可。
