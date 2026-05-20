@@ -23,7 +23,7 @@ jobs:
             artifact_name: desktop-macos-dmg
             bundle_glob: desktop/src-tauri/target/release/bundle/dmg/*.dmg
           - os: windows-latest
-            bundles: app,msi
+            bundles: msi
             artifact_name: desktop-windows-msi
             bundle_glob: desktop/src-tauri/target/release/bundle/msi/*.msi
 
