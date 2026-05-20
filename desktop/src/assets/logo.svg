@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="达人榜单">
+  <defs>
+    <linearGradient id="bg" x1="12" y1="12" x2="116" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#123a43"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bg)"/>
+  <circle cx="96" cy="30" r="18" fill="#f2b84b"/>
+  <rect x="32" y="72" width="15" height="26" rx="5" fill="#fff8e7"/>
+  <rect x="56" y="58" width="15" height="40" rx="5" fill="#fff8e7"/>
+  <rect x="80" y="42" width="15" height="56" rx="5" fill="#fff8e7"/>
+  <path d="M30 88 L54 70 L74 77 L98 49" fill="none" stroke="#f2b84b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

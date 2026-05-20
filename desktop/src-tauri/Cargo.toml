@@ -1,0 +1,20 @@
+[package]
+name = "douyin_creator_desk"
+version = "0.1.0"
+description = "Tauri desktop app for local creator ranking"
+authors = ["Lyle"]
+license = ""
+repository = ""
+edition = "2021"
+
+[lib]
+name = "douyin_creator_desk_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-shell = "2"
